@@ -1,0 +1,54 @@
+D:\CSE\Semester 4\PC2\TankClient\TankClient\bin\Debug\TankClient.exe.config
+D:\CSE\Semester 4\PC2\TankClient\TankClient\obj\Debug\TankClient.csprojResolveAssemblyReference.cache
+D:\CSE\Semester 4\PC2\TankClient\TankClient\obj\Debug\TankClient.Properties.Resources.resources
+D:\CSE\Semester 4\PC2\TankClient\TankClient\obj\Debug\TankClient.csproj.GenerateResource.Cache
+D:\CSE\Semester 4\PC2\TankClient\TankClient\bin\Debug\TankClient.exe
+D:\CSE\Semester 4\PC2\TankClient\TankClient\bin\Debug\TankClient.pdb
+D:\CSE\Semester 4\PC2\TankClient\TankClient\obj\Debug\TankClient.exe
+D:\CSE\Semester 4\PC2\TankClient\TankClient\obj\Debug\TankClient.pdb
+D:\CSE\Semester 4\PC2\TankClient\TankClient\obj\Debug\TankClient.Form1.resources
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game\TankClient\TankClient\bin\Debug\TankClient.exe.config
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game\TankClient\TankClient\obj\Debug\TankClient.exe
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game\TankClient\TankClient\obj\Debug\TankClient.pdb
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game\TankClient\TankClient\bin\Debug\TankClient.exe
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game\TankClient\TankClient\bin\Debug\TankClient.pdb
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game\TankClient\TankClient\obj\Debug\TankClient.csprojResolveAssemblyReference.cache
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game\TankClient\TankClient\obj\Debug\TankClient.Form1.resources
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game\TankClient\TankClient\obj\Debug\TankClient.Properties.Resources.resources
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game\TankClient\TankClient\obj\Debug\TankClient.csproj.GenerateResource.Cache
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\bin\Debug\TankClient.exe.config
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.exe
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.pdb
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.csprojResolveAssemblyReference.cache
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.Form1.resources
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.Properties.Resources.resources
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.csproj.GenerateResource.Cache
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\bin\Debug\TankClient.exe
+D:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\bin\Debug\TankClient.pdb
+G:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\bin\Debug\TankClient.exe.config
+G:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.exe
+G:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.pdb
+G:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\bin\Debug\TankClient.exe
+G:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\bin\Debug\TankClient.pdb
+G:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.csprojResolveAssemblyReference.cache
+G:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.Form1.resources
+G:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.Properties.Resources.resources
+G:\Semester 4\Nish - Sem 4\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.csproj.GenerateResource.Cache
+D:\Semester_4\Tanker\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\bin\Debug\TankClient.exe.config
+D:\Semester_4\Tanker\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.exe
+D:\Semester_4\Tanker\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.pdb
+D:\Semester_4\Tanker\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\bin\Debug\TankClient.exe
+D:\Semester_4\Tanker\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\bin\Debug\TankClient.pdb
+D:\Semester_4\Tanker\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.csprojResolveAssemblyReference.cache
+D:\Semester_4\Tanker\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.Form1.resources
+D:\Semester_4\Tanker\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.Properties.Resources.resources
+D:\Semester_4\Tanker\Programming Challenge ii\New folder\Tank Game Final\TankClient\TankClient\obj\Debug\TankClient.csproj.GenerateResource.Cache
+D:\Semester_4\Tanker\Mid_eval\TankClient\TankClient\bin\Debug\TankClient.exe.config
+D:\Semester_4\Tanker\Mid_eval\TankClient\TankClient\obj\Debug\TankClient.exe
+D:\Semester_4\Tanker\Mid_eval\TankClient\TankClient\obj\Debug\TankClient.pdb
+D:\Semester_4\Tanker\Mid_eval\TankClient\TankClient\bin\Debug\TankClient.exe
+D:\Semester_4\Tanker\Mid_eval\TankClient\TankClient\bin\Debug\TankClient.pdb
+D:\Semester_4\Tanker\Mid_eval\TankClient\TankClient\obj\Debug\TankClient.csprojResolveAssemblyReference.cache
+D:\Semester_4\Tanker\Mid_eval\TankClient\TankClient\obj\Debug\TankClient.Form1.resources
+D:\Semester_4\Tanker\Mid_eval\TankClient\TankClient\obj\Debug\TankClient.Properties.Resources.resources
+D:\Semester_4\Tanker\Mid_eval\TankClient\TankClient\obj\Debug\TankClient.csproj.GenerateResource.Cache

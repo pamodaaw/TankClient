@@ -6,55 +6,53 @@ using System.Threading.Tasks;
 
 namespace TankClient
 {
-    class Player
+    class Player : Block
     {
         private String name;
-        private bool isAlive;
-        private int positionX;
-        private int positionY;
+        private int isShot;
         private int health;
         private int coins;
         private int points;
+        private int direction;
 
         public Player(String name)
         {
             this.name = name;
-            isAlive = true;
+            isShot = 0;
             health = 0;
             coins = 0;
             points = 0;
         }
 
-        public void setName(String name)
-        {
-            this.name = name;
-        }
+        
 
-        public void setLife(bool isAlive)
+        public void setLife(int isShot)
         {
-            this.isAlive = isAlive;
+            this.isShot = isShot;
         }
 
         public void setPoints(int points)
         {
             this.points = points;
-
+            Console.WriteLine("Point ==> " + points);
         }
         public void setHealth(int health)
         {
             this.health = health;
-
+            Console.WriteLine("Health ==> " + health);
         }
         public void setCoins(int coins)
         {
             this.coins = coins;
-
+            Console.WriteLine("Coins ==> " + coins);
         }
 
-        public void setPosition(int x, int y)
+        public void setDirection(int dir)
         {
-            this.positionX = x;
-            this.positionY = y;
+            this.direction = dir;
         }
+
+
+
     }
 }

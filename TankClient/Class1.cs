@@ -23,7 +23,7 @@ namespace TankClient
         private Form1 form;
         private Thread thread;
 
-        private Player[] players;
+        private Board board;
         public Client()
         {
 
@@ -91,35 +91,40 @@ namespace TankClient
                     Console.WriteLine("New Game Instant received");
                     String player = parts[1];
                     Console.WriteLine("Player: " + player);
-                    this.players = new Player[5];
+
+                    this.board = new Board();
                     for (int i=0; i<5; i++){
-                        players[i].setName("P" + i);
+                       board.players[i] = new Player("P"+i);
                     }
 
                     // reading brick position details
-                    Console.WriteLine("Bricks -------------------------------------------");
                     String brick_map = parts[2];
                     String[] bricks = brick_map.Split(';');
                     int brick_no = 1;
                     foreach (String brick in bricks)
                     {
                         String[] brick_location = brick.Split(',');
-                        Console.WriteLine("Brick No. " + brick_no + " location ==>  X = " + brick_location[0] + " Y = " + brick_location[1]);
+                        Brick bb = new Brick();
+                        bb.setNo(brick_no);
+                        bb.setPostion(int.Parse(brick_location[0]), int.Parse(brick_location[1]));
+                        board.blocks[int.Parse(brick_location[0]),int.Parse(brick_location[1])] = bb;
                         brick_no++;
                     }
+
                     // end reading brick posiotion details
 
 
                     // reading stone position details
-
-                    Console.WriteLine("Stones --------------------------------------------");
                     String stone_map = parts[3];
                     String[] stones = stone_map.Split(';');
                     int stone_no = 1;
                     foreach (String stone in stones)
                     {
                         String[] stone_location = stone.Split(',');
-                        Console.WriteLine("Stone No. " + stone_no + " location ==>  X = " + stone_location[0] + " Y = " + stone_location[1]);
+                        Stone ss = new Stone();
+                        ss.setNo(stone_no);
+                        ss.setPostion(int.Parse(stone_location[0]), int.Parse(stone_location[1]));
+                        board.blocks[int.Parse(stone_location[0]), int.Parse(stone_location[1])]=ss;
                         stone_no++;
                     }
 
@@ -127,15 +132,16 @@ namespace TankClient
 
 
                     // reading water position details
-
-                    Console.WriteLine("Water --------------------------------------------");
                     String water_map = parts[4];
                     String[] waters = water_map.Split(';');
                     int water_no = 1;
                     foreach (String water in waters)
                     {
                         String[] water_location = water.Split(',');
-                        Console.WriteLine("Water No. " + water_no + " location ==>  X = " + water_location[0] + " Y = " + water_location[1]);
+                        Water ww = new Water();
+                        ww.setNo(water_no);
+                        ww.setPostion(int.Parse(water_location[0]), int.Parse(water_location[1]));
+                        board.blocks[int.Parse(water_location[0]), int.Parse(water_location[1])] = ww;
                         water_no++;
                     }
 
@@ -144,65 +150,94 @@ namespace TankClient
                 }
                 else if (msg_format.Equals("G")) // global update received
                 {
-                    Console.WriteLine("================================================================================\n");
-                    Console.WriteLine("New global Update received");
+                    
                     int player_no = 1;
                     for (player_no = 1; player_no <= 5; player_no++)
                     {
+
                         String player_code = parts[player_no];
                         if (player_code.Substring(0, 1).Equals("P")) // this is a player sub string
                         {
                             String[] player_details = player_code.Split(';');
-                            int[] details = Array.ConvertAll(player_details, int.Parse);
-                            Console.WriteLine("Player Details -----------------------------");
-                            Console.WriteLine("Player name: " + player_details[0]);
+                            String num = Convert.ToString( player_details[0][1]);
+                            int p_id = int.Parse(num);
                             String[] player_log = player_details[1].Split(',');
-                            Console.WriteLine("X ==> " + player_log[0] + " y ==> " + player_log[1]);
-                            Console.WriteLine("Direction ==> " + player_details[2]);
-                            Console.WriteLine("Whehter shot ==> " + player_details[3]);
-                            players[int(player_details[0])].setHealth(int(player_details[4]));
-                            Console.WriteLine("Health ==> " + player_details[4]);
-                            Console.WriteLine("Coins ==> " + player_details[5]);
-                            Console.WriteLine("Point ==> " + player_details[6]);
+                            board.players[p_id].setPostion(int.Parse(player_log[0]), int.Parse(player_log[1]));
+                            board.blocks[int.Parse(player_log[0]), int.Parse(player_log[1])]= board.players[p_id];
+                            board.players[p_id].setDirection(int.Parse(player_details[2]));
+                            board.players[p_id].setLife(int.Parse(player_details[3]));
+                            board.players[p_id].setHealth(int.Parse(player_details[4]));
+                            board.players[p_id].setCoins(int.Parse(player_details[5]));
+                            board.players[p_id].setPoints(int.Parse(player_details[6]));
+
                         }
                         else
                             break;
                     }
                     Console.WriteLine("================================================================================\n");
                     Console.WriteLine("Moving shot details");
-                    //  Console.WriteLine(parts[player_no]);
                     String[] shots = parts[player_no].Split(';');
                     foreach (String shot in shots)
                     {
                         String[] shot_details = shot.Split(',');
+                        Brick b = (Brick)board.blocks[int.Parse(shot_details[0]), int.Parse(shot_details[1])];
+                        b.setDamage(int.Parse(shot_details[2]));
+                        board.blocks[int.Parse(shot_details[0]), int.Parse(shot_details[1])]=b;
                         Console.WriteLine("Shot details ####  x==> " + shot_details[0] + " y ==> " + shot_details[1] + " damage level ==> " + shot_details[2]);
                     }
-
-
-
 
                 }
                 else if (msg_format.Equals("C")) // coin detail received
                 {
-                    Console.WriteLine("================================================================================\n");
-                    Console.WriteLine("Coin resource received");
+                    Coinpack cp = new Coinpack();
                     String[] location = parts[1].Split(',');
-                    Console.WriteLine("Location x ==> " + location[0] + " y ==> " + location[1]);
-                    Console.WriteLine("Time to disappear ==> " + parts[2]);
-                    Console.WriteLine("Value of coin ==> " + parts[3]);
+                    cp.setPostion(int.Parse(location[0]),int.Parse(location[1]));
+                    cp.setTime(int.Parse(parts[2]));
+                    cp.setAmount(int.Parse(parts[3]));
+                    board.blocks[int.Parse(location[0]), int.Parse(location[1])] = cp;
                 }
-                else if (msg_format.Equals("L")) // coin detail received
-                {
-                    Console.WriteLine("================================================================================\n");
-                    Console.WriteLine("Life Pack received");
-                    String[] location = parts[1].Split(',');
-                    Console.WriteLine("Location x ==> " + location[0] + " y ==> " + location[1]);
-                    Console.WriteLine("Time to disappear ==> " + parts[2]);
 
+                else if (msg_format.Equals("L")) // lifepack detail received
+                {
+                    Lifepack lp = new Lifepack();
+                    String[] location = parts[1].Split(',');
+                    lp.setPostion(int.Parse(location[0]), int.Parse(location[1]));
+                    lp.setTime(int.Parse(parts[2]));
+                    board.blocks[int.Parse(location[0]), int.Parse(location[1])] = lp;
                 }
             }
+
+
             catch (Exception e)
             {
+
+            }
+            for (int a = 0; a < 10; a++)
+            {
+                for (int b = 0; b < 10; b++)
+                {
+                    if (board.blocks[b, a] is Brick)
+                    {
+                        Console.Write("B ");
+                    }
+                    else if (board.blocks[b, a] is Stone)
+                    {
+                        Console.Write("S ");
+                    }
+                    else if (board.blocks[b, a] is Water)
+                    {
+                        Console.Write("W ");
+                    }
+                    else if (board.blocks[b, a] is Player)
+                    {
+                        Console.Write("P ");
+                    }
+                    else 
+                    {
+                        Console.Write("N ");
+                    }
+                }
+                Console.WriteLine();
 
             }
         }

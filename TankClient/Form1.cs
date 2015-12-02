@@ -59,5 +59,13 @@ namespace TankClient
 
         }
 
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            String msg1 = "I:P0;2,0;2;0;100;0;0:4,3,0;0,8,0;2,4,0;7,6,0;9,3,0;3,1,0;5,7,0#";
+            String msg2 = "G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0";
+            client.formatMsg(msg1);
+            client.formatMsg(msg2);
+        }
+
     }
 }

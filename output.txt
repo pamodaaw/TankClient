@@ -1,0 +1,327 @@
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+C:5,1:2407:1540#
+================================================================================
+
+Coin resource received
+Location x ==> 5 y ==> 1
+Time to disappear ==> 2407
+Value of coin ==> 1540
+L:9,5:58938#
+================================================================================
+
+Life Pack received
+Location x ==> 9 y ==> 5
+Time to disappear ==> 58938
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+C:0,2:17479:928#
+================================================================================
+
+Coin resource received
+Location x ==> 0 y ==> 2
+Time to disappear ==> 17479
+Value of coin ==> 928
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+C:4,6:3371:1554#
+================================================================================
+
+Coin resource received
+Location x ==> 4 y ==> 6
+Time to disappear ==> 3371
+Value of coin ==> 1554
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================
+
+New global Update received
+Player Details -----------------------------
+Player name: P0
+X ==> 0 y ==> 0
+Direction ==> 0
+Whehter shot ==> 0
+Health ==> 100
+Coins ==> 0
+Point ==> 0
+================================================================================
+
+Moving shot details
+Shot details ####  x==> 4 y ==> 2 damage level ==> 0
+Shot details ####  x==> 6 y ==> 8 damage level ==> 0
+Shot details ####  x==> 8 y ==> 1 damage level ==> 0
+Shot details ####  x==> 0 y ==> 3 damage level ==> 0
+Shot details ####  x==> 3 y ==> 1 damage level ==> 0
+G:P0;0,0;0;0;100;0;0:4,2,0;6,8,0;8,1,0;0,3,0;3,1,0#
+================================================================================

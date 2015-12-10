@@ -16,5 +16,10 @@ namespace TankClient
             this.positionX = x;
             this.positionY = y;
         }
+        public int[] getPosition()
+        {
+            int[] position = { this.positionX, this.positionY };
+            return position;
+        }
     }
 }

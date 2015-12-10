@@ -52,7 +52,33 @@ namespace TankClient
             this.direction = dir;
         }
 
+        public String getname()
+        {
+            return this.name;
+        }
 
+        public int getIsShot()
+        {
+            return this.isShot;
+        }
 
+        public int getHealth()
+        {
+            return this.health;
+        }
+
+        public int getCoins()
+        {
+            return this.coins;
+        }
+        public int getPoints()
+        {
+            return this.points;
+        }
+        public int getDirection()
+        {
+            return this.direction;
+        }
+        
     }
 }

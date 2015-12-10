@@ -66,6 +66,7 @@ namespace TankClient
                 }
                 Console.WriteLine(data);
                 formatMsg(data);
+                updateDetails();
 
                 form.Invoke(new Action(() =>
                 {
@@ -74,6 +75,7 @@ namespace TankClient
                 streamRecieve.Close();
                 listner.Stop();
                 clientRecieve.Close();
+
             }
         }
 
@@ -175,8 +177,6 @@ namespace TankClient
                         else
                             break;
                     }
-                    Console.WriteLine("================================================================================\n");
-                    Console.WriteLine("Moving shot details");
                     String[] shots = parts[player_no].Split(';');
                     foreach (String shot in shots)
                     {
@@ -211,6 +211,11 @@ namespace TankClient
             {
 
             }
+            
+        }
+
+        public void updateDetails()
+        {
             for (int a = 0; a < 10; a++)
             {
                 for (int b = 0; b < 10; b++)
@@ -239,6 +244,23 @@ namespace TankClient
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
+            Console.WriteLine("====================================");
+            Console.WriteLine("Player details");
+            foreach (Player p in board.players)
+            {
+                Console.WriteLine("Player name : " + p.getname());
+                Console.WriteLine("Player poistion : " + "x==>" + p.getPosition()[0] + " y==>" + p.getPosition()[1]);
+                Console.WriteLine("Player isShot : " + p.getIsShot());
+                Console.WriteLine("Player points : " + p.getPoints());
+                Console.WriteLine("Player coins : " + p.getCoins());
+                Console.WriteLine("Player health : " + p.getHealth());
+                Console.WriteLine("Player direction : " + p.getDirection());
+                Console.WriteLine();
+
+            }
+
+
         }
     }
 }

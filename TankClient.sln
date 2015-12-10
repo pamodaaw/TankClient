@@ -1,7 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankClient", "TankClient\TankClient.csproj", "{9534626D-C905-4C6A-B731-9327336AAF79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97413049-A0CC-418E-9502-D2E185BB49EB}"
+	ProjectSection(SolutionItems) = preProject
+		..\images\background.jpg = ..\images\background.jpg
+		..\images\brick.jpg = ..\images\brick.jpg
+		..\images\coinpack.jpg = ..\images\coinpack.jpg
+		..\images\lifepack.jpg = ..\images\lifepack.jpg
+		..\images\sand.jpg = ..\images\sand.jpg
+		..\images\stone.jpg = ..\images\stone.jpg
+		..\images\water.jpg = ..\images\water.jpg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

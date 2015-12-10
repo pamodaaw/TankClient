@@ -23,7 +23,7 @@ namespace TankClient
         private Form1 form;
         private Thread thread;
 
-        private Board board;
+        public Board board;
         public Client()
         {
 
@@ -66,10 +66,10 @@ namespace TankClient
                 }
                 Console.WriteLine(data);
                 formatMsg(data);
-                
+
                 form.Invoke(new Action(() =>
                 {
-                    //form.displayData("\n message => \n" + data + "\n");
+                    form.updateGUI();
                 }));
                 streamRecieve.Close();
                 listner.Stop();
@@ -86,15 +86,16 @@ namespace TankClient
             {
                 String msg_format = parts[0];
                 if (msg_format.Equals("I")) // game instant received
-                {   
+                {
                     Console.WriteLine("================================================================================\n");
                     Console.WriteLine("New Game Instant received");
                     String player = parts[1];
                     Console.WriteLine("Player: " + player);
 
                     this.board = new Board();
-                    for (int i=0; i<5; i++){
-                       board.players[i] = new Player("P"+i);
+                    for (int i = 0; i < 5; i++)
+                    {
+                        board.players[i] = new Player("P" + i);
                     }
 
                     // reading brick position details
@@ -107,7 +108,7 @@ namespace TankClient
                         Brick bb = new Brick();
                         bb.setNo(brick_no);
                         bb.setPostion(int.Parse(brick_location[0]), int.Parse(brick_location[1]));
-                        board.blocks[int.Parse(brick_location[0]),int.Parse(brick_location[1])] = bb;
+                        board.blocks[int.Parse(brick_location[0]), int.Parse(brick_location[1])] = bb;
                         brick_no++;
                     }
 
@@ -124,7 +125,7 @@ namespace TankClient
                         Stone ss = new Stone();
                         ss.setNo(stone_no);
                         ss.setPostion(int.Parse(stone_location[0]), int.Parse(stone_location[1]));
-                        board.blocks[int.Parse(stone_location[0]), int.Parse(stone_location[1])]=ss;
+                        board.blocks[int.Parse(stone_location[0]), int.Parse(stone_location[1])] = ss;
                         stone_no++;
                     }
 
@@ -150,7 +151,7 @@ namespace TankClient
                 }
                 else if (msg_format.Equals("G")) // global update received
                 {
-                    
+
                     int player_no = 1;
                     for (player_no = 1; player_no <= 5; player_no++)
                     {
@@ -159,11 +160,11 @@ namespace TankClient
                         if (player_code.Substring(0, 1).Equals("P")) // this is a player sub string
                         {
                             String[] player_details = player_code.Split(';');
-                            String num = Convert.ToString( player_details[0][1]);
+                            String num = Convert.ToString(player_details[0][1]);
                             int p_id = int.Parse(num);
                             String[] player_log = player_details[1].Split(',');
                             board.players[p_id].setPostion(int.Parse(player_log[0]), int.Parse(player_log[1]));
-                            board.blocks[int.Parse(player_log[0]), int.Parse(player_log[1])]= board.players[p_id];
+                            board.blocks[int.Parse(player_log[0]), int.Parse(player_log[1])] = board.players[p_id];
                             board.players[p_id].setDirection(int.Parse(player_details[2]));
                             board.players[p_id].setLife(int.Parse(player_details[3]));
                             board.players[p_id].setHealth(int.Parse(player_details[4]));
@@ -182,7 +183,7 @@ namespace TankClient
                         String[] shot_details = shot.Split(',');
                         Brick b = (Brick)board.blocks[int.Parse(shot_details[0]), int.Parse(shot_details[1])];
                         b.setDamage(int.Parse(shot_details[2]));
-                        board.blocks[int.Parse(shot_details[0]), int.Parse(shot_details[1])]=b;
+                        board.blocks[int.Parse(shot_details[0]), int.Parse(shot_details[1])] = b;
                         Console.WriteLine("Shot details ####  x==> " + shot_details[0] + " y ==> " + shot_details[1] + " damage level ==> " + shot_details[2]);
                     }
 
@@ -191,7 +192,7 @@ namespace TankClient
                 {
                     Coinpack cp = new Coinpack();
                     String[] location = parts[1].Split(',');
-                    cp.setPostion(int.Parse(location[0]),int.Parse(location[1]));
+                    cp.setPostion(int.Parse(location[0]), int.Parse(location[1]));
                     cp.setTime(int.Parse(parts[2]));
                     cp.setAmount(int.Parse(parts[3]));
                     board.blocks[int.Parse(location[0]), int.Parse(location[1])] = cp;
@@ -206,8 +207,6 @@ namespace TankClient
                     board.blocks[int.Parse(location[0]), int.Parse(location[1])] = lp;
                 }
             }
-
-
             catch (Exception e)
             {
 
@@ -219,6 +218,7 @@ namespace TankClient
                     if (board.blocks[b, a] is Brick)
                     {
                         Console.Write("B ");
+
                     }
                     else if (board.blocks[b, a] is Stone)
                     {
@@ -232,15 +232,13 @@ namespace TankClient
                     {
                         Console.Write("P ");
                     }
-                    else 
+                    else
                     {
                         Console.Write("N ");
                     }
                 }
                 Console.WriteLine();
-
             }
         }
-
     }
 }

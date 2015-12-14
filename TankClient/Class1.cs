@@ -222,7 +222,7 @@ namespace TankClient
                 {
                     if (board.blocks[b, a] is Brick)
                     {
-                        Console.Write("B ");
+                         Console.Write("B ");
 
                     }
                     else if (board.blocks[b, a] is Stone)
@@ -236,6 +236,14 @@ namespace TankClient
                     else if (board.blocks[b, a] is Player)
                     {
                         Console.Write("P ");
+                    }
+                    else if (board.blocks[b, a] is Coinpack)
+                    {
+                        Console.Write("C ");
+                    }
+                    else if (board.blocks[b, a] is Lifepack)
+                    {
+                        Console.Write("L ");
                     }
                     else
                     {

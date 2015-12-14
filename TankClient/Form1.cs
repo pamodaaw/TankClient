@@ -82,44 +82,7 @@ namespace TankClient
                 }
             }
 
-             for (int a = 0; a < 10; a++)
-            {
-                for (int b = 0; b < 10; b++)
-                {
-                    if (client.board.blocks[b, a] is Brick)
-                    {
-                        //Image image = Image.FromFile("brick.jpg");
-                        //cells[b, a].Image= Image.FromFile(@"D:\Semester_4\Tanker\Mid_eval\images\brick.jpg");
-                        cells[b, a].Load(@"D:\Semester_4\Tanker\Mid_eval\images\brick.jpg");
-                        
-                    }
-                    else if (client.board.blocks[b, a] is Stone)
-                    {
-                        //Image image = Image.FromFile("stone.jpg");
-                        //cells[b, a].Image = Image.FromFile(@"D:\Semester_4\Tanker\Mid_eval\images\stone.jpg");
-                        cells[b, a].Load(@"D:\Semester_4\Tanker\Mid_eval\images\brick.jpg");
-                    }
-                    else if (client.board.blocks[b, a] is Water)
-                    {
-                        //Image image = Image.FromFile("water.jpg");
-                        //cells[b, a].Image = Image.FromFile(@"D:\Semester_4\Tanker\Mid_eval\images\water.jpg");
-                        cells[b, a].Load(@"D:\Semester_4\Tanker\Mid_eval\images\brick.jpg");
-                    }
-                    else if (client.board.blocks[b, a] is Player)
-                    {
-                        //Image image = Image.FromFile("background.jpg");
-                        //cells[b, a].Image = Image.FromFile(@"D:\Semester_4\Tanker\Mid_eval\images\background.jpg");
-                        cells[b, a].Load(@"D:\Semester_4\Tanker\Mid_eval\images\brick.jpg");
-                    }
-                    else 
-                    {
-                        //Image image = Image.FromFile("sand.jpg");
-                        //cells[b, a].Image = Image.FromFile(@"D:\Semester_4\Tanker\Mid_eval\images\sand.jpg");
-                        cells[b, a].Load(@"D:\Semester_4\Tanker\Mid_eval\images\sand.jpg");
-                    }
-                }
 
-            }
         }
         }
 

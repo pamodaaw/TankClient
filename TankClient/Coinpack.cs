@@ -8,8 +8,7 @@ namespace TankClient
 {
     class Coinpack:Block
     {
-        int positionX;
-        int positionY;
+
         int time_to_disappear;
         int amount;
 

@@ -11,6 +11,14 @@ namespace TankClient
         private int positionX;
         private int positionY;
 
+        public Block(int x, int y)
+        {
+            this.positionX = x;
+            this.positionY = y;
+        }
+
+        public Block() { }
+
         public void setPostion(int x, int y)
         {
             this.positionX = x;
